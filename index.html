@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilidad y Estadística</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Probabilidad y estadística</h1>
+        <p class="tagline"></p>
+    </header>
+
+    <main class="container">
+        
+        <section class="section">
+            <span class="badge">Variable discreta</span>
+
+            <div class="section-header">
+                <div class="section-number">01</div>
+                <div class="section-title">
+                    <h2>Análisis de Control de Calidad</h2>
+                    <p>Monitoreo de Quejas Diarias en Call Center</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Problemática</h3>
+                <p>
+                    En el departamento de gestión de atención al cliente de un Call Center, el control de la variabilidad en el número 
+                    de quejas diarias recibidas es fundamental para dimensionar la plantilla de operadores y asegurar estándares mínimos 
+                    de resolución. Una alta concentración de quejas en días específicos satura el sistema de llamadas. Se ha monitoreado el servicio 
+                    durante una muestra representativa de 100 días, registrando de forma exacta cuántas quejas se reciben por jornada laboral.
+                </p>
+            </div>
+
+            <div class="highlight-note">
+                <strong>Muestra de datos recopilados (100 días):</strong>
+                <p style="margin-top: 10px; word-break: break-all;">
+                    0, 3, 2, 2, 3, 3, 0, 4, 4, 3, 2, 2, 3, 0, 1, 1, 2, 3, 2, 1, 0, 2, 2, 1, 3, 2, 1, 2, 1, 0, 5, 2, 1, 2, 3, 2, 0, 1, 2, 4, 
+                    2, 1, 0, 2, 3, 1, 2, 2, 0, 1, 2, 1, 3, 2, 2, 4, 1, 2, 0, 2, 1, 3, 2, 2, 1, 0, 2, 3, 1, 2, 1, 2, 2, 4, 0, 1, 2, 3, 2, 1, 
+                    1, 2, 2, 0, 2, 1, 2, 3, 1, 2, 0, 2, 2, 1, 3, 2, 0, 1, 2, 1
+                </p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>clase</th>
+                        <th>frecuencia absoluta</th>
+                        <th>frecuencia relativa</th>
+                        <th>frecuencia acumulada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>11</td><td>11%</td><td>11</td></tr>
+                    <tr><td>1</td><td>26</td><td>26%</td><td>37</td></tr>
+                    <tr><td>2</td><td>32</td><td>32%</td><td>69</td></tr>
+                    <tr><td>3</td><td>17</td><td>17%</td><td>86</td></tr>
+                    <tr><td>4</td><td>10</td><td>10%</td><td>96</td></tr>
+                    <tr><td>5</td><td>4</td><td>4%</td><td>100</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-card">
+                <h2 style="margin-bottom: 25px;">Visualización Gráfica</h2>
+                <div class="grid">
+                    <div class="stat-box" style="background: white;">
+                        <img src="pastelhijos_trans.png" alt="Gráfica de Pastel" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.1: Distribución del volumen.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="ojivahijos_trans.png" alt="Ojiva" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.2: Ojiva de frecuencias.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="poligono_trans.png" alt="Polígono" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.3: Comportamiento operacional.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="quejas_trans.png" alt="Histograma" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.4: Control de calidad.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <span class="badge">Variable Continua</span>
+            
+            <div class="section-header">
+                <div class="section-number">02</div>
+                <div class="section-title">
+                    <h2>Gestión de Tiempo en Pantalla</h2>
+                    <p>Minutos de Uso Diario y Hábitos de Conexión</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Problemática</h3>
+                <p>
+                    El tiempo promedio diario en minutos que los usuarios permanecen con la pantalla encendida interactuando con dispositivos 
+                    es una variable continua que requiere una medición precisa en intervalos. El consumo continuo excesivo afecta directamente los 
+                    periodos de atención. Para mapear estos hábitos, se recopilaron los datos de un grupo de 100 usuarios, midiendo cronométricamente 
+                    el tiempo de conexión diaria.
+                </p>
+            </div>
+
+            <div class="highlight-note">
+                <strong>Muestra de tiempos cronometrados (en minutos):</strong>
+                <p style="margin-top: 10px; word-break: break-all;">
+                    34.1, 45.8, 52.1, 61.3, 68.0, 72.4, 78.9, 83.2, 88.5, 92.1, 95.7, 101.2, 105.4, 110.8, 114.2, 118.9, 122.3, 125.7, 130.1, 134.5, 
+                    138.2, 142.9, 145.0, 149.3, 152.1, 155.8, 160.2, 163.4, 167.9, 171.2, 175.0, 178.4, 182.1, 185.9, 189.2, 192.5, 195.0, 199.3, 202.1, 205.8, 
+                    210.2, 213.4, 217.9, 221.2, 225.0, 228.4, 232.1, 235.9, 239.2, 242.5, 245.0, 249.3, 252.1, 255.8, 260.2, 263.4, 267.9, 271.2, 275.0, 278.4, 
+                    282.1, 285.9, 289.2, 292.5, 295.0, 299.3, 302.1, 305.8, 310.2, 313.4, 317.9, 321.2, 325.0, 328.4, 332.1, 335.9, 339.2, 342.5, 345.0, 349.3, 
+                    355.8, 362.1, 368.4, 375.0, 382.1, 389.5, 395.2, 402.1, 410.5, 416.2, 422.8, 430.1, 437.4, 445.2, 452.1, 458.7, 465.3, 471.9, 476.2, 480.0
+                </p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>clase</th>
+                        <th>límite inferior</th>
+                        <th>límite superior</th>
+                        <th>marca de clase</th>
+                        <th>frecuencia absoluta</th>
+                        <th>frecuencia relativa</th>
+                        <th>frecuencia acumulada</th>                                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>34.10</td><td>89.83</td><td>61.96</td><td>9</td><td>9%</td><td>9</td></tr>
+                    <tr><td>2</td><td>89.83</td><td>145.57</td><td>117.70</td><td>14</td><td>14%</td><td>23</td></tr>
+                    <tr><td>3</td><td>145.57</td><td>201.31</td><td>173.44</td><td>15</td><td>15%</td><td>38</td></tr>
+                    <tr><td>4</td><td>201.31</td><td>257.05</td><td>229.18</td><td>16</td><td>16%</td><td>54</td></tr>
+                    <tr><td>5</td><td>257.05</td><td>312.79</td><td>284.91</td><td>15</td><td>15%</td><td>69</td></tr>
+                    <tr><td>6</td><td>312.79</td><td>368.53</td><td>340.66</td><td>14</td><td>14%</td><td>83</td></tr>
+                    <tr><td>7</td><td>368.53</td><td>424.27</td><td>396.40</td><td>8</td><td>8%</td><td>91</td></tr>
+                    <tr><td>8</td><td>424.27</td><td>480.00</td><td>452.13</td><td>9</td><td>9%</td><td>100</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-card">
+                <h2 style="margin-bottom: 25px;">Visualización Gráfica</h2>
+                <div class="grid">
+                    <div class="stat-box" style="background: white;">
+                        <img src="pastelhijos_trans.png" alt="Gráfica de Pastel" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.1: Distribución del volumen.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="ojivahijos_trans.png" alt="Ojiva" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.2: Ojiva de frecuencias.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="poligono_trans.png" alt="Polígono" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.3: Comportamiento operacional.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="quejas_trans.png" alt="Histograma" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 1.4: Control de calidad.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <span class="badge">Variable Cualitativa</span>
+            
+            <div class="section-header">
+                <div class="section-number">03</div>
+                <div class="section-title">
+                    <h2>Preferencia en Redes Sociales</h2>
+                    <p>Distribución Categórica y Tendencias de Mercado Digital</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Problemática</h3>
+                <p>
+                    El mercado digital está regido por categorías nominales que definen el comportamiento de la comunidad en redes sociales. 
+                    La elección cualitativa de una plataforma sobre otra segmenta por completo el ecosistema. Analizar la red social predominante 
+                    permite a los desarrolladores predecir tendencias comerciales y enfocar campañas según la plataforma de preferencia de los usuarios.
+                </p>
+            </div>
+
+            <div class="highlight-note">
+                <strong>Plataformas registradas en el estudio:</strong>
+                <p style="margin-top: 10px; font-size: 0.95em; color: var(--text-dark);">
+                    Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Facebook, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, Instagram, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, TikTok, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, YouTube, WhatsApp, WhatsApp, WhatsApp, WhatsApp, WhatsApp, WhatsApp, WhatsApp, WhatsApp
+                </p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>clase</th>
+                        <th>frecuencia absoluta</th>
+                        <th>frecuencia relativa</th>
+                        <th>frecuencia acumulada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Facebook</td><td>35</td><td>35%</td><td>35</td></tr>
+                    <tr><td>Instagram</td><td>25</td><td>25%</td><td>60</td></tr>
+                    <tr><td>TikTok</td><td>20</td><td>20%</td><td>80</td></tr>
+                    <tr><td>YouTube</td><td>12</td><td>12%</td><td>92</td></tr>
+                    <tr><td>WhatsApp</td><td>8</td><td>8%</td><td>100</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-card">
+                <h2 style="margin-bottom: 25px;">Visualización Gráfica</h2>
+                <div class="grid">
+                    <div class="stat-box" style="background: white;">
+                        <img src="pelis.png" alt="Barras Verticales" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 3.1: Barras verticales.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="diagramapelis.png" alt="Barras Horizontales" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 3.2: Barras horizontales.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="poligonopelis.png" alt="Polígono" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 3.3: Polígono categórico.</span>
+                    </div>
+                    <div class="stat-box" style="background: white;">
+                        <img src="pastelpelis.png" alt="Pastel" style="max-width: 100%; height: auto; border-radius: 8px;">
+                        <span class="stat-label" style="margin-top: 10px; display: block;">Figura 3.4: Distribución porcentual.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ecosistema Estadístico Multivariable. Diseñado para VS Code.</p>
+        </div>
+    </footer>
+</body>
+</html>
